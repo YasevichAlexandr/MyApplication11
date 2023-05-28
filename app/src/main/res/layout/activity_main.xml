@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FFB6C1"
+              android:padding="10dp"
+              android:layout_marginTop="0dp"
+              tools:context=".MainActivity">
+    <TextView
+            android:text="Вычислить значение функции (3x^2-7a)*b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+    />
+
+    <TextView
+            android:text="Введите значение x:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+
+    />
+
+    <EditText
+            android:id="@+id/x_input"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+    />
+
+    <TextView
+            android:text="Введите значение a:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+    <EditText
+            android:id="@+id/a_input"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"/>
+
+    <TextView
+            android:text="Введите значение b:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+    <EditText
+            android:id="@+id/b_input"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"/>
+
+    <CheckBox
+            android:id="@+id/check_box"
+            android:text="Show Graph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+    <RadioButton
+            android:id="@+id/radio_button1"
+            android:text="Возвести в квадрат"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+    <Button
+            android:id="@+id/calculate_button"
+            android:text="Вычислить"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"/>
+
+    <TextView
+            android:id="@+id/result_text"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" />
+
+    <LinearLayout
+            android:id="@+id/graph_layout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFBB86FC"
+            android:visibility="gone"
+            android:orientation="horizontal"/>
+
+    <TextView
+            android:id="@+id/result_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Result: "
+            android:textStyle="bold"/>
+
+    <com.example.myapplication11.GraphView
+            android:id="@+id/graph_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFFFF"
+            android:layout_marginTop="5dp"/>
+
+
+
+</LinearLayout>
